@@ -1,0 +1,53 @@
+'2-matrix_divided' module
+=============================
+Unit test for  'matrix_divided' function
+---------------------
+
+Import the function:
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Now test it:
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+	>>> matrix_divided([["ABDO", "Hussien"], [12, 13]], 3)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+	>>> matrix_divided([[1, 2, 3], [4, 5]], 2)
+	Traceback (most recent call last):
+	TypeError: Each row of the matrix must have the same size
+
+	>>> matrix_divided([[1, 2], [1000, 2000]], "KING_ABDO")
+	Traceback (most recent call last):
+	TypeError: div must be a number
+
+	>>> matrix_divided("Abdo", 1520025)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+	>>> matrix_divided([[1, 2], [3, 4]], 0)
+	Traceback (most recent call last):
+	ZeroDivisionError: division by zero
+
+	>>> matrix_divided([[1, 2], [3, 4]], -5)
+	[[-0.2, -0.4], [-0.6, -0.8]]
+
+	>>> matrix_divided([[1, 2], [3, 4]], float('inf'))
+	[[0.0, 0.0], [0.0, 0.0]]
+
+	>>> matrix = [[1, 2, 3]]
+	>>> matrix_divided(matrix, 3)
+	[[0.33, 0.67, 1.0]]
+	>>> print(matrix)
+	[[1, 2, 3]]
+
+	>>> matrix_divided([[1, 2]])
+	Traceback (most recent call last):
+	TypeError: matrix_divided() missing 1 positional argu: 'div'
+
+	>>> matrix_divided()
+	Traceback (most recent call last):
+	TypeError: matrix_divided() missing 2 positional argu: 'matrix' and 'div'
