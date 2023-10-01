@@ -45,9 +45,11 @@ Now test it:
 	[[1, 2, 3]]
 
 	>>> matrix_divided([[1, 2]])
+	# doctest: +IGNORE_EXCEPTION_DETAIL
 	Traceback (most recent call last):
-	TypeError: matrix_divided() missing 1 positional argu: 'div'
+	TypeError: matrix_divided() missing 1 positional arguments: 'div'
 
 	>>> matrix_divided()
+	# doctest: +IGNORE_EXCEPTION_DETAIL
 	Traceback (most recent call last):
-	TypeError: matrix_divided() missing 2 positional argu: 'matrix' and 'div'
+	TypeError: matrix_divided() missing 2 positional arguments: 'matrix' and 'div'
