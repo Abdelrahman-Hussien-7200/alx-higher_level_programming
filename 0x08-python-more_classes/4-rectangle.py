@@ -29,7 +29,7 @@ class Rectangle:
     def __repr__(self):
         """Return internal string"""
 
-        return f"Rectangle{self.__width}, {self.__height}"
+        return f"Rectangle({self.__width}, {self.__height})"
 
     @property
     def width(self):
