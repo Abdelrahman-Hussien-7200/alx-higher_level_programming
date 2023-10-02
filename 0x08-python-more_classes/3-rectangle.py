@@ -14,6 +14,18 @@ class Rectangle:
         self.width = width
         self.height = height
 
+    def __str__(self):
+        """Returns an readable string"""
+
+        if self.__height == 0 or self.__width == 0:
+            return ''
+        put_hash = ''
+        for i in range(self.__height):
+            for j in range(self.__width):
+                put_hash += '#'
+            put_hash += '\n'
+        return put_hash[:-1]
+
     @property
     def width(self):
         """Retrieves the width."""
