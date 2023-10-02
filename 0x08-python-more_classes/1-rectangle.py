@@ -8,7 +8,7 @@ An empty class Rectangle
 class Rectangle:
     """ Defines a rectangle"""
 
-    def __init__(self, width, height):
+    def __init__(self, width=0, height=0):
         """Init  Rectangle."""
 
         self.width = width
