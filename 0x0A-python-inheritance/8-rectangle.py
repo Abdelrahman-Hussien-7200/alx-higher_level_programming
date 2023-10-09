@@ -4,8 +4,11 @@ class Rectangle that inherits from BaseGeometry
 """
 
 
-""" import and define Geometry"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+"""
+Rectangle that inherits from BaseGeometry
+"""
+
 
 class Rectangle(BaseGeometry):
     """
