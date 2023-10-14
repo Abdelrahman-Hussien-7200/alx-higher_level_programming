@@ -11,7 +11,7 @@ new value to the public instance attribute id
 """
 
 
-Class Base():
+Class Base:
     """
     base calss
     """
