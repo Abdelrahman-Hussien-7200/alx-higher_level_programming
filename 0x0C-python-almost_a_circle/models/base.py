@@ -15,13 +15,15 @@ Class Base():
     """
     base calss
     """
+
     __nb_objects = 0
+
     def __init__(self, id=None):
         """
         init class constructor
         """
-        if id != None:
-           self.id = None
+        if id is not None:
+            self.id = None
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
