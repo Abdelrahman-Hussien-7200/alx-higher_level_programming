@@ -79,3 +79,16 @@ class Rectangle(Base):
         """
         self.setter_validation("y", value)
         self.__y = value
+
+    @staticmethod
+    def validation_for_setters(att, value):
+        """
+        validation for all setters
+        """
+        if type(value) != int:
+            raise TypeError(f"{att} must be an integer")
+        if value <= 0:
+            raise ValueError(f"{att} must be > 0")
+        elif att == 'x' or att == 'y':
+            if value < 0:
+                raise ValueError(f"{att} must be >= 0)
