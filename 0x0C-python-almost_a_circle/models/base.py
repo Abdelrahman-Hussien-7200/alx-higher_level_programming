@@ -21,6 +21,7 @@ Class Base():
         init class constructor
         """
         if id != None:
-            id = None
-    __nb_objects += 1
-
+           self.id = None
+        else:
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
