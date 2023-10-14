@@ -48,7 +48,7 @@ class Rectangle(Base):
         setter method for height
         """
         self.validation("height", value)
-        self.height = value
+        self.__height = value
 
     @property
     def x(self):
@@ -91,4 +91,10 @@ class Rectangle(Base):
             raise ValueError(f"{att} must be > 0")
         elif att == 'x' or att == 'y':
             if value < 0:
-                raise ValueError(f"{att} must be >= 0)
+                raise ValueError(f"{att} must be >= 0")
+
+    def area(self):
+        """
+        returns the area value of the Rectangle instance
+        """
+        return (self.height * self.width)
