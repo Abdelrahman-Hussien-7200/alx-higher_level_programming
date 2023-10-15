@@ -9,6 +9,7 @@ assume id is an integer and you don’t need to test the type of it
 otherwise, increment __nb_objects and assign the
 new value to the public instance attribute id
 """
+import json
 
 
 Class Base:
@@ -27,3 +28,13 @@ Class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """
+        returns the JSON string representation
+        of list_dictionaries
+        """
+        if list_dictionaries is None or list_dictionaries == []:
+            return []
+        return json.dumps(list_dictionaries)
