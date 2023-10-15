@@ -3,6 +3,7 @@
 Base class and methods
 """
 import json
+import unittest
 
 
 Class Base:

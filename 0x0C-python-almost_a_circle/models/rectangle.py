@@ -3,6 +3,7 @@
 class Rectangle that inherits from Base
 """
 
+import unittest
 from models.base import Base
 
 

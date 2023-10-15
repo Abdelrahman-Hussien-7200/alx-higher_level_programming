@@ -2,6 +2,7 @@
 """
 class Square that inherits from Rectangle
 """
+import unittest
 from models.rectangle import Rectangle
 
 
@@ -38,8 +39,10 @@ Class Square(Rectangle):
                                                          self.x,
                                                          self.y,
                                                          self.width)
+
     def update(self, *args, **kwargs):
-        """update square props
+        """
+        update square props
         """
         if len(args):
             for i, arg in enumerate(args):
