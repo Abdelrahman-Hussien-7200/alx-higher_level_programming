@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Unittests for base
+"""Unittests for base
 """
 
 import unittest
@@ -8,9 +7,7 @@ from models.square import Square
 
 
 class TestSquare(unittest.TestCase):
-    """
-    Define unit test for Square model
-    """
+    """Define unit test for Square model"""
 
     def test_initialization_success(self):
         s1 = Square(5)
