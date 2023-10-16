@@ -2,7 +2,6 @@
 """
 class Square that inherits from Rectangle
 """
-import unittest
 from models.rectangle import Rectangle
 
 
