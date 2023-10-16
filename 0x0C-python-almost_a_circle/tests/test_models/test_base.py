@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Unittests for base
+"""
+Unittests for base class
 """
 
 import unittest
@@ -7,7 +8,9 @@ from models.base import Base
 
 
 class TestBase(unittest.TestCase):
-    """Define unit test for Base model"""
+    """
+    Define unit test for Base
+    """
 
     def test_initialization(self):
         base1 = Base()
