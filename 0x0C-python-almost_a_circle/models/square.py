@@ -38,7 +38,7 @@ class Square(Rectangle):
         self.height = value
 
     def update(self, *args, **kwargs):
-       """
+        """
         update square props
         Args:
             *args (ints): New attribute values.
