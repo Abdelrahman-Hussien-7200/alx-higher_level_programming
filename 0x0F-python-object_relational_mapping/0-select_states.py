@@ -4,12 +4,12 @@ import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
-    my_db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
+    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
                          passwd=argv[2], db=argv[3], charset="utf8")
-    cursor = my_db.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
-    rows = cursor.fetchall()
+    mycursor = db.cursor()
+    mycursor.execute("SELECT * FROM states ORDER BY id ASC")
+    rows = mycursor.fetchall()
     for row in rows:
         print(row)
-    cursor.close()
-    my_db.close()
+    mycursor.close()
+    db.close()
